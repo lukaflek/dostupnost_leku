@@ -15,7 +15,6 @@ SELECT 'public.vydeje' AS tbl_name, count(*) AS cnt FROM public.vydeje;
 -- lecivepripravky
 --================
 
-
 --atc_who: skupina léků se stejnou aktivní látkou
 --forma: mast, gel, tableta (např.) lék se může jmenovat stejně (ASENTRA)
 --sdov: souběžný dovoz: 
@@ -47,7 +46,6 @@ ORDER BY
 --================
 -- mr_hlaseni
 --================
-
 
 --mr: market report
 --suklu poskytuje registátor léku (firma, která zastupuje výrobce)
@@ -103,7 +101,6 @@ FROM
 	LEFT JOIN public.lecivepripravky lp
 		ON (lp.kod_sukl = pr.kod_sukl)
 ;
-
 
 --================
 -- vydeje
